@@ -25,14 +25,14 @@
 # Inherit from oppo-common
 -include device/oppo/common/BoardConfigCommon.mk
 
-PLATFORM_PATH := device/oneplus/cheeseburger
+PLATFORM_PATH := device/oneplus/dumpling
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
 BOARD_VENDOR := oneplus
 
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := OnePlus5,cheeseburger,oneplus5,op5,A5000
+TARGET_OTA_ASSERT_DEVICE := OnePlus5T,dumpling,oneplus5t,op5t,A5010
 
 # we are too big to fit in
 PRODUCT_SKIP_FINGERPRINT_FROM_FILE := true
@@ -259,7 +259,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_cheeseburger
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_dumpling
 TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)
 
 # RIL
@@ -290,4 +290,4 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/oneplus/cheeseburger/BoardConfigVendor.mk
+-include vendor/oneplus/dumpling/BoardConfigVendor.mk
