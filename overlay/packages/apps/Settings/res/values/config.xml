@@ -23,7 +23,7 @@
        2 = left side
        3 = right side
   -->
-  <integer name="config_fingerprintSensorLocation">1</integer>
+  <integer name="config_fingerprintSensorLocation">0</integer>
 
   <!-- Whether to enable "show operator name in the status bar" setting -->
   <bool name="config_showOperatorNameInStatusBar">true</bool>
