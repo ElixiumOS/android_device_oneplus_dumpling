@@ -21,19 +21,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from dumpling device
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
-# Inherit some common GZOSP stuff.
-$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
+# Inherit some common ElixiumOS vendor.
+$(call inherit-product, vendor/elixium/common.mk)
 
-PRODUCT_NAME := gzosp_dumpling
-PRODUCT_DEVICE := dumpling
+PRODUCT_NAME := elix_dumpling
+PRODUCT_DEVICE := OnePlus 5T
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := ONEPLUS A5010
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-TARGET_VENDOR_PRODUCT_NAME := OnePlus5T
-TARGET_VENDOR_DEVICE_NAME := OnePlus5T
+TARGET_VENDOR_PRODUCT_NAME := OnePlus 5T
+TARGET_VENDOR_DEVICE_NAME := OnePlus 5T
 
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus5T PRODUCT_NAME=OnePlus5T
 

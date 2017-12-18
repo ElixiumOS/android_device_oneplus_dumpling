@@ -1,0 +1,3 @@
+add_lunch_combo elix_dumpling-userdebug
+add_lunch_combo elix_dumpling-user
+add_lunch_combo elix_dumpling-eng
