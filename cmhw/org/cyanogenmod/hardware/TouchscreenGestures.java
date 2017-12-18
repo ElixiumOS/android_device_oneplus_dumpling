@@ -17,7 +17,7 @@
 
 package org.cyanogenmod.hardware;
 
-import org.cyanogenmod.internal.util.FileUtils;
+import org.cyanogenmod.hardware.FileUtils;
 
 import cyanogenmod.hardware.TouchscreenGesture;
 
