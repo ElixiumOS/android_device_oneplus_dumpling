@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/elix_dumpling.mk
+    $(LOCAL_DIR)/aosp_dumpling.mk

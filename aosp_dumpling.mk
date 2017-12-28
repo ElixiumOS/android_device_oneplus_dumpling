@@ -21,10 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from dumpling device
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
-# Inherit some common ElixiumOS vendor.
-$(call inherit-product, vendor/elixium/common.mk)
+# Inherit some common AOSP stuff.
+TARGET_DENSITY := xxhdpi
+TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := elix_dumpling
+PRODUCT_NAME := aosp_dumpling
 PRODUCT_DEVICE := OnePlus 5T
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -38,6 +40,6 @@ TARGET_VENDOR_DEVICE_NAME := OnePlus 5T
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus5T PRODUCT_NAME=OnePlus5T
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=OnePlus/OnePlus5T/OnePlus5T:7.1.1/NMF26X/11150308:user/release-keys
+    BUILD_FINGERPRINT=google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys \
 
 TARGET_VENDOR := oneplus
