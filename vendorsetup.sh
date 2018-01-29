@@ -1,0 +1,3 @@
+add_lunch_combo discovery_dumpling-userdebug
+add_lunch_combo discovery_dumpling-user
+add_lunch_combo discovery_dumpling-eng
