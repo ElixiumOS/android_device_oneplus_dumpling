@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/discovery.mk
+    $(LOCAL_DIR)/elix_dumpling.mk
